@@ -26,7 +26,8 @@
     
     .title {
     /* padding: 10px 0px 20px 150px; */
-    font-size: 40px;
+    font-size: 35px;
+    padding-top: 5px;
     }
     
     .scores {
