@@ -1,0 +1,37 @@
+.header {
+    max-width: 100%;
+    color: white;
+    background-color: #A33A38;
+    margin-bottom: 10px;
+    height: 150px;
+}
+  
+.title {
+    float: left;
+    margin: 40px 0px 40px 15%;
+    font-size: 50px;
+}
+  
+.scores {
+    float: right;
+    margin: 0px 15% 40px 0px;
+    font-size: 25px;
+}
+
+@media (max-width:860px){
+
+    .header{
+        height: 140px;
+    }
+    
+    .title {
+    /* padding: 10px 0px 20px 150px; */
+    font-size: 40px;
+    }
+    
+    .scores {
+    float: right;
+    /* padding: 25px 150px 20px 0px; */
+    font-size: 20px;
+    }
+}
