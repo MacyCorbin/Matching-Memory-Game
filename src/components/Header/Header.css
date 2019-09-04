@@ -37,3 +37,23 @@
     padding-right:0px;
     }
 }
+
+@media (max-width:500px){
+
+    .header{
+        height: 100px;
+    }
+    
+    .title {
+    /* padding: 10px 0px 20px 150px; */
+    font-size: 20px;
+    padding-top: 2px;
+    }
+    
+    .scores {
+    float: right;
+    /* padding: 25px 150px 20px 0px; */
+    font-size: 15px;
+    padding-right:0px;
+    }
+}
