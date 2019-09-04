@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './matchGame.css';
 import Cards from './Cards';
 import MemoryCards from './memoryCards';
+import Music from './components/Music/Music'
 import Header from "./components/Header/Header";
+
 
 
 
@@ -13,12 +15,15 @@ class Game extends Component {
         this.onPlayAgain = this.onPlayAgain.bind(this);
         this.memoryCards = new MemoryCards();
       }
+
     
       componentWillMount() {
         this.initGame();
       }
     
       initGame() {
+
+      
         this.memoryCards.generateCardSet();
         this.setState({
           turnNo : 1,
@@ -105,21 +110,22 @@ class Game extends Component {
         let gameStatus = <div className='Game-status'>
                           <div>Turn: {this.state.turnNo}</div>
                           <div>Pairs Matched: {this.state.pairsFound}</div>
-                          <div><button onClick={this.onPlayAgain}>Shuffle</button></div>
+                          <div ><button  className="shuffle" onClick={this.onPlayAgain}>Shuffle</button></div>
                         </div>;
     
         if (this.state.pairsFound === this.memoryCards.NUM_IMAGES) {
           gameStatus = <div className='Game-status'>
                         <div>GAME COMPLETE!</div>
                         <div>You used {this.state.turnNo-1} turns</div>
-                        <div><button onClick={this.onPlayAgain}>Play again?</button></div></div>;      
+                        <div ><button className="shuffle" onClick={this.onPlayAgain}>Play again?</button></div></div>;      
         }
     
         return (
           <div className='Game'>
+          
           <Header status={gameStatus}>Marvel Match
           </Header>
-              
+          <Music></Music>
             <div className='CardContainer'>
               {cardViews}
             </div>
