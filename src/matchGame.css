@@ -27,17 +27,18 @@ font-size: large;
 
 .Card {
 display: inline-block;
-border-color: white;
-border-width: 5px;
-border-style: solid;
-margin-bottom: 10px;      
-margin-left: 10px;  
+/* border-color: white;
+border-width: 4%;
+border-style: solid; */
+/* margin-bottom: 10px;      
+margin-left: 10px;   */
+margin: .9%;
 width: 15%;  
 }
 
 .CardContainer {
 display: inline-block;
-max-width: 90%;
+max-width: 85%;
 margin: '20px auto';
 flex: 1;
 
@@ -66,6 +67,24 @@ flex: 1;
     padding: 5px 0 5px 0;
     font-size:.5em;
     border-radius: 3px;
+    }
+    .Game {
+        min-height: 80vh; 
+    }
+    .CardContainer {
+        max-width: 95%;
+        
+    }
+
+    .Card {
+        width: 20%;  
+    }
+    
+}
+
+@media (max-width:500px){
+    .CardContainer {
+        max-width: 97%; 
     }
     
 }

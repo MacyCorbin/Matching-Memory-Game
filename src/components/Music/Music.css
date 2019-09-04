@@ -2,8 +2,15 @@
     margin: 0px 40%;
     width: 20%;
     text-align: center;
-    font-size: 5vw;
+    font-size: 3vw;
     background-color: white;
     border: white 2px solid;
     color: #A33A38;
+}
+
+@media (max-width:860px){
+
+    .playSound{
+    font-size: 5vw;
+    }
 }
